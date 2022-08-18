@@ -1,0 +1,31 @@
+<%- include("particals/headerM"); -%>
+    <!-- css -->
+    <link rel="stylesheet" href="style/sign-up.css">
+    <!-- css static -->
+    <link rel="stylesheet" href="public/style/sign-up.css">
+<%- include("particals/headerS"); -%>
+
+<!-- title -->
+<div id="title">
+    <div class="title-box">
+        <form action="/sign-up" method="post">
+            <h1>Registation</h1>
+            <label for="">First name</label><br>
+            <input type="text" required name="userFirstName" id="userFirstName"><br>
+            <label for="">Last name</label><br>
+            <input type="text" required name="userLastName" id="userLastName"><br>
+            <label for="">Enroll no.</label><br>
+            <input type="number" required name="userEnrollNo" id="userEnrollNo"><br>
+            <label for="">Email</label><br>
+            <input type="email" required name="userEmail" id="userEmail"><br>
+            <label for="">Password</label><br>
+            <input type="password" required name="pwd" id="pwd"><br>
+            <label for="">Confirm password</label><br>
+            <input type="password" required name="confirmPwd" id="confirmPwd"><br>
+            <button type="submit">Register</button>
+            <p>Already sign-in? <a href="/" >Then don't worry</a></p>
+        </form>
+    </div>
+</div>
+
+<%- include("particals/footer"); -%>

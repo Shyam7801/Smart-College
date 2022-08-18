@@ -1,0 +1,56 @@
+<%- include("particals/headerM"); -%>
+    <!-- css -->
+    <link rel="stylesheet" href="style/admin.css">
+    <!-- css static -->
+    <link rel="stylesheet" href="public/style/admin.css">
+<%- include("particals/headerS"); -%>
+
+<!-- titile -->
+<div id="title">
+    <h1>Find Student</h1>
+    <form method="post" action="/ritik-6633@pass">   
+        <input id="searchBar" type="text" placeholder=" Enter Enroll. no." name="searchBar" required>
+        <button class="search-btn" type="submit">Search</button>   
+    </form>  
+</div>
+
+<!-- search-result -->
+<div id="search-result">
+    <div class="details-box">
+        <h1>Student details</h1>
+        <h2>Full Name:</h2>
+        <p>Ritik ashutosh shah</p>
+        <h2>Enrollment Number:</h2>
+        <p>190770107621</p>
+        <h2>Email:</h2>
+        <p>ritikshah6633@gmail.com</p>
+        <h2>Phone Number:</h2>
+        <p>+919537482727</p>
+    </div>
+    <div class="changing-box">
+        <h2>Change details</h2>
+        <form action="" method="post">
+            <input class="newPhoneNo" type="number" placeholder="Enter new phone no." name="newPhoneNo"><br>
+            <button class="search-btn" type="submit">Change</button><br>
+        </form>
+        <form action="" method="post">
+            <input class="newEmail" type="text" placeholder="Enter new Email" name="newPhoneNo"><br>
+            <button class="search-btn" type="submit">Change</button><br>
+        </form>
+    </div>
+    <div class="wallet-box">    
+        <h2>Wallet</h2>
+        <p>(₹1,00,000)</p>
+        <form action="" method="post">    
+            <input class="money" type="number" placeholder="Enter amount" name="money">
+            <button class="submit-money" type="submit">add</button><br>
+        </form>
+        <form action="" method="post">    
+            <input class="money" type="number" placeholder="Enter amount" name="money">
+            <button class="submit-money" type="submit">remove</button><br>
+        </form> 
+    </div>
+
+</div>
+
+<%- include("particals/footer"); -%>
