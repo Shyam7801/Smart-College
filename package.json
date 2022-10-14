@@ -2,9 +2,10 @@
   "name": "smart-college",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "author": "ritik shah",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "lodash": "^4.17.21",
     "mongo": "^0.1.0",
     "mongoose": "^6.2.7",
+    "nodemon": "^2.0.20",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "request": "^2.88.2"

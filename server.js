@@ -18,7 +18,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // mongoDB
-const dbURI = MONGO_URI;
+const dbURI = process.env.MONGO_URI;
+
 mongoose.connect(dbURI, { useNewUrlParser: true,useUnifiedTopology: true })
     .then((result) => console.log("dbURI connected"))
     .catch((err) => console.log(err));
